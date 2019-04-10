@@ -42,7 +42,7 @@ namespace MediaFoundationSamples
             WCHAR message[TRACE_STRING_LEN];
 
             va_start(va, sFormatString);
-            hr = StringCchVPrintf(message, TRACE_STRING_LEN, sFormatString, va);
+            hr = StringCchVPrintfW(message, TRACE_STRING_LEN, sFormatString, va);
             va_end(va);
 
             if (SUCCEEDED(hr))
