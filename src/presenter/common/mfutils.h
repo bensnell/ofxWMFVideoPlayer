@@ -178,7 +178,7 @@ namespace MediaFoundationSamples
         }
 
         // If we got here, szTmp is valid, so return it to the caller.
-        *pszText = szTmp;
+        *pszText = (WCHAR*)szTmp;
         if (pcchLen)
         {
             *pcchLen = static_cast<DWORD>(cch);  // Return the length NOT including the '\0' 
