@@ -10,15 +10,14 @@ Previous version of oF should work as well but won't be maintained.
 
 ##Prerequisites 
 
-This addons uses the WGL_NV_DX_interop extension, in order to use it you need to upgrade the GLEW library of your openFrameworks folder :
-Prior to compiling this example you need to replace the GLEW headers and libraries from your of\libs foler by the one present in the lib folder of this repository.
+Originally, this addon required replacing the GLEW OpenFrameworks libraries with the ones provided here. However, as of OFv10, this no longer seems necessary. The newest GLEW libraries also provide the additional benefit of supporting both x64 (64 bit) and x86 (32 bit) architectures, while those provided here only support x86.
 
 On top of that this addon is built against the Direct X SDK of June 2010. You'll need to install it to have the headers required for compiling the example. At the time of writing, you can download it on the [Microsoft website](http://www.microsoft.com/en-us/download/details.aspx?id=6812)
 
 
 ##Using the example
 
-Make sure you have updated the GLEW library, your graphic driver are up to date.
+Make sure your graphic driver is up to date.
 Copy (and rename) a mp4 file as "test.mp4" into the data folder and run the example.
 
 
