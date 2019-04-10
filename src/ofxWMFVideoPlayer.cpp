@@ -463,7 +463,7 @@ BOOL ofxWMFVideoPlayer::InitInstance()
   //  wcex.hInstance      = hInst;
 	wcex.hbrBackground  = (HBRUSH)(BLACK_BRUSH);
    // wcex.lpszMenuName   = MAKEINTRESOURCE(IDC_MFPLAYBACK);
-    wcex.lpszClassName  = szWindowClass;
+	wcex.lpszClassName = "MFBASICPLAYBACK";
 
     if (RegisterClassEx(&wcex) == 0)
     {
@@ -472,8 +472,8 @@ BOOL ofxWMFVideoPlayer::InitInstance()
 
 
     // Create the application window.
-    hwnd = CreateWindow(szWindowClass, L"", WS_OVERLAPPEDWINDOW,
-        CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, NULL, NULL, NULL, NULL);
+	hwnd = CreateWindow("MFBASICPLAYBACK", "", WS_OVERLAPPEDWINDOW,
+		CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, NULL, NULL, NULL, NULL);
 
     if (hwnd == 0)
     {
